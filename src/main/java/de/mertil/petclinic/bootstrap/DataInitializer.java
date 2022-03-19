@@ -6,6 +6,7 @@ import de.mertil.petclinic.services.OwnerService;
 import de.mertil.petclinic.services.VetService;
 import de.mertil.petclinic.services.map.OwnerServiceMap;
 import de.mertil.petclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +16,10 @@ public class DataInitializer implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataInitializer() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    @Autowired
+    public DataInitializer(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
