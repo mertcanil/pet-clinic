@@ -1,4 +1,4 @@
-package org.iu.il.petclinic;
+package de.mertil.petclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

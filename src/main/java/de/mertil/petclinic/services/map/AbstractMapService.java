@@ -1,4 +1,4 @@
-package org.iu.il.petclinic.services.map;
+package de.mertil.petclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

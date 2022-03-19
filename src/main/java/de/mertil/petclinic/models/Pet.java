@@ -1,4 +1,4 @@
-package org.iu.il.petclinic.models;
+package de.mertil.petclinic.models;
 
 import java.time.LocalDate;
 

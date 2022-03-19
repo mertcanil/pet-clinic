@@ -1,8 +1,6 @@
-package org.iu.il.petclinic.services;
+package de.mertil.petclinic.services;
 
-import org.iu.il.petclinic.models.Owner;
-
-import java.util.Set;
+import de.mertil.petclinic.models.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long> {
 

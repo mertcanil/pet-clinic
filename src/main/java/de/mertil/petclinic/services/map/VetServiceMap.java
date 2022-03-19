@@ -1,11 +1,11 @@
-package org.iu.il.petclinic.services.map;
+package de.mertil.petclinic.services.map;
 
-import org.iu.il.petclinic.models.Vet;
-import org.iu.il.petclinic.services.CrudService;
+import de.mertil.petclinic.models.Vet;
+import de.mertil.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {

@@ -1,11 +1,16 @@
-package org.iu.il.petclinic.services.map;
+package de.mertil.petclinic.services.map;
 
-import org.iu.il.petclinic.models.Owner;
-import org.iu.il.petclinic.services.CrudService;
+import de.mertil.petclinic.models.Owner;
+import de.mertil.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
+    @Override
+    public Owner findByLastname(String lastname) {
+        return null;
+    }
 
     @Override
     public Set<Owner> findAll() {
